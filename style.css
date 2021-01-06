@@ -1,0 +1,274 @@
+/*****INDHOLDSFORTEGNELSE*****/
+
+/***GENERELLE INDSTILLINGER***/
+/***ANIMATIONS KLASSER***/
+/***BURGERMENU****************/
+/***SECTION 1**************/
+/***SECTION 2******************/
+/***SECTION 3**************/
+/***SECTION 4*****************/
+/***SECTION 5*****************/
+/***SECTION 6*****************/
+/***KNAPPER*****************/
+/***SECTION OM*****************/
+/*********MEDIAQUERY**********/
+
+/***GENERELLE INDSTILLINGER***/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+section {
+    margin: 0 auto;
+    /*sørger for at mit indhold er i midten*/
+    max-width: 1000px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display 700', serif;
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 9vw;
+}
+
+h2 {
+    font-family: 'Playfair Display 700', serif;
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: 'Playfair Display 700', serif;
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: -10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: left;
+}
+
+figcaption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+}
+
+/***ANIMATION'S KLASSER****************/
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-10%);
+}
+
+
+/***BURGERMENU****************/
+
+header {
+    position: relative;
+    height: 0;
+    /*hvis ikke vi har den her, så fylder headeren hele forsiden*/
+}
+
+nav {
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    float: right;
+    text-align: right;
+}
+
+a {
+    color: white;
+    font-size: 2.2rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+#menuknap {
+    color: white;
+    cursor: pointer;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0px;
+    padding-right: 4rem;
+    margin-bottom: -15px;
+}
+
+#menulinje {
+    list-style-type: none;
+    transition: transform 0.3s;
+    transform-origin: top right;
+    padding-right: 4rem;
+
+}
+
+/***SECTION 1**************/
+
+
+#section_1 {
+    background-image: url(img/splashbillede%201%20sem%20eksamen.jpg);
+    background-size: cover;
+    max-width: none;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/***SECTION 2**************/
+
+.section_wrapper2 {
+    height: 80vh;
+    width: 80vw;
+}
+
+.billed_sprite {
+    background-image: url(img/handwriting.png);
+    background-size: cover;
+    width: 63vw;
+    height: 100vh;
+    position: absolute;
+    left: 40vw;
+    margin: -6vw;
+
+}
+
+.tekst {
+    padding: 4vw;
+    margin-left: 26vw;
+    height: 20vh;
+    width: 35vw;
+    line-height: 3rem;
+    font-style: italic;
+
+}
+
+
+/***SECTION 3**************/
+
+/***SECTION 4**************/
+
+/***SECTION 5**************/
+
+
+/***KNAPPER**************/
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.dokumentationsknap {
+    width: 18vw;
+    height: 12vw;
+    margin-top: 2vw;
+}
+
+.dokumentationsknap:hover {
+    opacity: 0.6
+}
+
+
+
+
+
+/*********MEDIAQUERY**********/
+
+@media only screen and (min-width: 800px) {
+
+    #section_3 .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #section_4 .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    #section_5 .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    #section_6 .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .billed_sprite {
+        background-image: url(img/handwriting.png);
+        background-size: cover;
+        width: 86vw;
+        height: 55vh;
+        position: absolute;
+        left: 19vw;
+        margin: -6vw;
+    }
+
+    .tekst {
+        padding: 8vw;
+        margin-left: 3vw;
+        height: 20vh;
+        width: 63vw;
+        line-height: 3rem;
+        font-style: italic;
+    }
+
+}
