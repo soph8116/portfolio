@@ -22,16 +22,16 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="menulink">
             <div id="menuknap">☰</div>
             <ul id="menulinje" class="hidden">
-                <li>
+                <li class="link">
                     <a href="index.html#section_1">FORSIDE</a>
                 </li>
-                <li>
+                <li class="link">
                     <a href="index.html#section_2">PORTFOLIO</a>
                 </li>
-                <li>
+                <li class="link">
                     <a href="om.html#section_om">OM MIG</a>
                 </li>
             </ul>
@@ -58,11 +58,14 @@
             </div>
         </section>
 
+         <button onclick="topFunction()" id="backtotop" title="Go to top">&#9650;
+</button>
+
         <section id="section_3">
             <h2>Grundlæggende web</h2>
             <div class="section_wrapper">
                 <div class="col">
-                    <figure>
+                    <figure id="billede">
                         <a href="http://ohmsen.dk/kea/02_web/04_responsive/responsive_site_v2/index.html">
                             <img src="IMG/1SEMEXGRUNDWEB.jpg" alt="et billede af en hjemmeside om skateboarding som kan trykkes på">
                         </a>
@@ -93,13 +96,20 @@
                     <p>Vi havde særligt fokus på projektstyring. Årets projekt var salg af t-shirt på webshop. Jeg lærte værktøjet, Design Sprint. 5 dages kundeorienteret designproces med en prototype som slutsprodukt, man kan vise og teste med kunden. En high-fidelity prototype lærte jeg at lave Adobe XD, hvor funktionaliteter som klik og swipes kan vises.
                         <br>
                         <br>
-                        Projektet gjorde det muligt for mig at tilegne viden indenfor UX, UI, microcopy, pitch, bruger-test samt metoder i form af desk research, interview, survey-undersøgelse, så jeg fik indsigter i, hvordan jeg kunne skabe det bedst mulige koncept til brugerne, som både tager hensyn til afsender og modtager samt skaber forståelse for, hvad brugerne gør og hvorfor.
+                        Projektet gjorde det muligt for mig at tilegne viden indenfor UX, UI, microcopy, pitch, bruger-test samt metoder i form af desk research, interview, survey-undersøgelse, så jeg fik indsigter i, hvordan jeg kunne skabe det bedst mulige koncept til brugerne, som både tager hensyn til afsender og modtager samt skaber forståelse for, hvad brugerne gør og hvorfor. Jeg lærte f.eks. om konventioner; at hjemknap altid skal føre til landingpage og at microcopy motiverer brugeren til at udføre en handling. Jeg har f.eks. gjort brug af personlige sætninger for at tage brugeren i hånden helt frem til køb af en velgørenheds t-shirt.
                         <br>
                         <br>
-                        Jeg lærte f.eks. om konventioner; at hjemknap altid skal føre til landingpage og at microcopy motiverer brugeren til at udføre en handling. Jeg har f.eks. gjort brug af personlige sætninger for at tage brugeren i hånden helt frem til køb af en velgørenheds t-shirt.
+                        Se mere om research til koncept på nedenstående knap.</p>
+                         <div class="wrapper">
+                        <div class="dokumentationsknap">
+                            <a href="https://xd.adobe.com/view/bcfd7719-8b75-48f9-99d5-6a6dac7e6e64-e9ae/">
+                                <img src="img/Designdokumentationsknap.svg">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <figure>
+                    <figure id="billede">
                         <a href="https://xd.adobe.com/view/b557ec8d-804e-428f-bb66-a1bc0ca49fb1-e004/">
                             <img src="IMG/1SEMEXUX.jpg" alt="et billede af en prototype">
                         </a>
@@ -113,7 +123,7 @@
             <h2>Grundlæggende animation</h2>
             <div class="section_wrapper">
                 <div class="col">
-                    <figure>
+                    <figure id="billede">
                         <a href="http://ohmsen.dk/kea/04-animation/spil/index.html">
                             <img src="IMG/1SEMEXANIMATION.jpg" alt="et billede af mit computerspil som kan trykkes på">
                         </a>
@@ -122,10 +132,7 @@
                 </div>
                 <div class="col">
                     <h3>Hvad lærte jeg?</h3>
-                    <p>Jeg lærte de grunlæggende principper inden for javascript, css animationer, Adobe Audition samt Adobe Illustrator ved at kreere et lille spil.
-                        <br>
-                        <br>
-                        Jeg skulle selv udtænke et spilkoncept. Det var fedt at lære designprocessen fra ide til færdigt produkt. Her lærte jeg, hvordan vi skulle arbejde professionelt med farver, kompositionsteknikker og formgivning af grafiske elementer (figurer, spil-elementer, baggrunddesign). Jeg lavede først moodboard, styletile og skitser i hånden, hvorefter jeg rentegnede det i Illustrator. Når spillets elementerne var færdige, lærte jeg at lave aktivitets- og statemachine-diagram, som simplificerede planlæggelsen af de interaktive flow i Javascript. Herefter lærte jeg, hvordan jeg kodede relevante css animationer samt funktioner i Javascript for dernæst at se om disse fungerede korrekt i Chrome Inspector (Consol). Hvis dette ikke fungerede korrekt lærte jeg, om fejlfinding og hvordan fejlene kunne rettes. Da mit spil var færdig, lavede vi alle en digital fernisering samt et spørgeskema for at teste spil-ideen. Dette gav muligheden for få feedback på funktionalitet og design, så man evt. kunne rette fejl for at opnå den optimale brugeroplevelse.
+                    <p>Jeg lærte de grunlæggende principper inden for javascript, css animationer, Adobe Audition samt Adobe Illustrator ved at kreere et lille spil. Jeg skulle selv udtænke et spilkonceptet. Det var fedt at lære designprocessen fra ide til færdigt produkt. Her lærte jeg, hvordan vi skulle arbejde professionelt med farver, kompositionsteknikker og formgivning af grafiske elementer (figurer, spil-elementer, baggrunddesign). Jeg lavede først moodboard, styletile og skitser i hånden, hvorefter jeg rentegnede det i Illustrator. Når spillets elementerne var færdige, lærte jeg at lave aktivitets- og statemachine-diagram, som simplificerede planlæggelsen af de interaktive flow i Javascript. Herefter lærte jeg, hvordan jeg kodede relevante css animationer samt funktioner i Javascript for dernæst at se om disse fungerede korrekt i Chrome Inspector (Consol). Hvis dette ikke fungerede korrekt lærte jeg, om fejlfinding og hvordan fejlene kunne rettes. Da mit spil var færdig, lavede vi alle en digital fernisering samt et spørgeskema for at teste spil-ideen. Dette gav muligheden for få feedback på funktionalitet og design, så man evt. kunne rette fejl for at opnå den optimale brugeroplevelse.
                         <br>
                         <br>
                         Klik på knappen nedenfor, for at se min samlede designdokumentation for mit eget spil.
@@ -143,18 +150,18 @@
         </section>
 
 
-           <section id="section_6">
+        <section id="section_6">
             <h2>Grundlæggende indhold</h2>
             <div class="section_wrapper">
-                 <div class="col">
+                <div class="col">
                     <h3>Hvad lærte jeg?</h3>
                     <p>Jeg startede med at få en foto-opgave, hvor fotografierne skulle redigeres til en specifik foto-stil i Photoshop. Dernæst blev jeg introduceret til videoproduktion, lydoptagelser samt redigering af disse i Adobe Premiere Pro og Audition ved producere et pilotprojekt, som skulle give mig et fundament til næste projekt.
-                    <br>
-                    <br>
-                    Herefter fik vi tildelt en case, hvor vi i grupper skulle redesigne en virksomheds hjemmeside samt lave en virksomhedsvideo og fotos for dem. Vi valgte <a href="uttedesign.dk"></a>. I gruppeprojektet lærte vi at arbejde med SCRUM board via værktøjet Trello til styring af vores medieproduktion samt holde overblik over hinandens opgaver.  Vi lærte at lave en virksomhedsanalyse, så vi fik indsigter i kundens behov, deres målgruppe og ønsker for redesign. Vi lærte at lave en 5-sec-test og BERT-test for at få indblik i, hvordan brugerne ser det eksisterende site vs. hvordan vi ønsker at sitet nye design. Vi afsluttede med en ekspert-test samt pitch af vores re-design for at få feedback på evt. mangler og brugeroplevelse.
-                    <br>
-                    <br>
-                    Det var et fedt afsluttende projekt, som opsummerede alt det vi havde lært.
+                        <br>
+                        <br>
+                        Herefter fik vi tildelt en case, hvor vi i grupper skulle redesigne en virksomheds hjemmeside samt lave en virksomhedsvideo og fotos for dem. Vi valgte <a class="textlink" href="https://www.uttedesign.dk/">Uttedesign.dk</a>. I gruppeprojektet lærte vi at arbejde med SCRUM board via værktøjet Trello til styring af vores medieproduktion samt holde overblik over hinandens opgaver. Vi lærte at lave en virksomhedsanalyse, så vi fik indsigter i kundens behov, deres målgruppe og ønsker for redesign. Vi lærte at lave en 5-sec-test og BERT-test for at få indblik i, hvordan brugerne ser det eksisterende site vs. hvordan vi ønsker at sitet nye design. Vi afsluttede med en ekspert-test samt pitch af vores re-design for at få feedback på evt. mangler og brugeroplevelse.
+                        <br>
+                        <br>
+                        Det var et fedt afsluttende projekt, som opsummerede alt det vi havde lært. Klik på knappen nedenfor for at se vores designdokumentation.
                     </p>
                     <div class="wrapper">
                         <div class="dokumentationsknap">
@@ -165,7 +172,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <figure>
+                    <figure id="billede">
                         <a href="https://gracious-hugle-282ba4.netlify.app/index.html">
                             <img src="IMG/1SEMEXUTTEDESIGN.jpg" alt="et billede af mit hjemmeside som kan trykkes på">
                         </a>
@@ -175,12 +182,21 @@
             </div>
 
         </section>
-
-
-
-
-
     </main>
+
+    <footer>
+        <div class="grid_container">
+            <div id="kontakt">
+                <h2>Kontakt</h2>
+                <p>Telefon: <a class="kontaktlink" href="tel:28559777">28 55 97 77</a></p>
+                <p>E-mail: <a class="kontaktlink" href="mailto:ohmsendesign@gmail.com">ohmsendesign@gmail.com</a></p>
+                <div class="some">
+                    <a class="instagram" href="https://www.instagram.com/sophieoohmsen/"> <img src="img/instagram.png" alt="instagram ikon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="portfolio.js"></script>
 </body>

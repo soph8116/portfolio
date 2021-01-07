@@ -11,6 +11,8 @@
 /***SECTION 6*****************/
 /***KNAPPER*****************/
 /***SECTION OM*****************/
+/***FOOTER*****************/
+
 /*********MEDIAQUERY**********/
 
 /***GENERELLE INDSTILLINGER***/
@@ -53,7 +55,7 @@ h2 {
     font-size: 2.5rem;
     color: black;
     text-transform: uppercase;
-    margin-bottom: -10px;
+    margin-bottom: 0vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,6 +65,7 @@ h3 {
     font-size: 1.6rem;
     color: black;
     margin-bottom: -10px;
+    margin-top: 0vw;
 }
 
 p {
@@ -80,6 +83,20 @@ figcaption {
     color: black;
     font-weight: 300;
     text-align: center;
+    padding: 1px 15px 15px 15px;
+}
+
+.textlink {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: left;
+    text-decoration: underline;
+}
+
+a.textlink:visited {
+    color: blue;
 }
 
 /***ANIMATION'S KLASSER****************/
@@ -87,6 +104,30 @@ figcaption {
 .hidden {
     opacity: 0;
     transform: translateX(-10%);
+}
+
+
+#billede {
+    margin: 0;
+}
+
+#billede:hover {
+    cursor: pointer;
+    animation: screenshot_scale 0.2s infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes screenshot_scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.01);
+    }
 }
 
 
@@ -106,26 +147,71 @@ nav {
     text-align: right;
 }
 
-a {
+#menulinje a {
     color: white;
     font-size: 2.2rem;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-decoration: none;
+    position: relative;
 }
 
-a:visited {
+#menulinje a:visited {
     color: white;
 }
 
-a:active {
+#menulinje a:active {
     color: white;
 }
 
-a:hover {
-    color: red;
+#menulinje a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
 }
+
+#menulinje a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/*How to make a line under text (2 ovenover): first we need to set the a's position to relative and a:before to absolute. Then we set the a:before's X scale to 0 and then again the x-scale to 1. We hide it with visibility: hidden for browsers that don’t support CSS animations. */
+
+/*understående er effekter så links skifterfarve samt laver en lille bevægelse (li.link:hover) og forstørres i str (a:hover)*/
+
+#menulinje a:hover {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+li.link:hover {
+    cursor: pointer;
+    animation: screenshot_scale 0.2s infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes screenshot_scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(12);
+    }
+}
+
 
 #menuknap {
     color: white;
@@ -188,13 +274,29 @@ a:hover {
 
 }
 
-
 /***SECTION 3**************/
+
+#section_3 {
+    margin-bottom: 10vw;
+}
 
 /***SECTION 4**************/
 
+#section_4 {
+    margin-bottom: 10vw;
+}
+
 /***SECTION 5**************/
 
+#section_5 {
+    margin-bottom: 5vw;
+}
+
+/***SECTION 6**************/
+
+#section_6 {
+    margin-bottom: 10vw;
+}
 
 /***KNAPPER**************/
 
@@ -213,37 +315,178 @@ a:hover {
 }
 
 .dokumentationsknap:hover {
-    opacity: 0.6
+    opacity: 0.6;
+    cursor: pointer;
+    animation: screenshot_scale 0.2s infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
+@keyframes screenshot_scale {
+    0% {
+        transform: scale(1);
+    }
 
+    100% {
+        transform: scale(1.03);
+    }
+}
 
+#backtotop {
+    display: none;
+    /* Hidden by default. display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.The <script> element uses display: none; as default.  */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 35px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 4px solid;
+    /* border */
+    outline: none;
+    /* Remove outline */
+    background-color: transparent;
+    /* Set a background color */
+    color: black;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 13px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    font-family:
+}
 
+/*********FOOTER**********/
+
+footer {
+    background-color: #ADADAD;
+    padding: 3vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+footer p {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    position: relative;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer a.kontaktlink::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+footer a.kontaktlink:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+footer a.kontaktlink:visited {
+    color: white;
+}
+
+footer a.kontaktlink:active {
+    color: white;
+}
+
+footer a.kontaktlink:hover {
+    color: white;
+}
+
+.grid_col {
+    display: flex;
+    flex-direction: row;
+}
+
+footer img {
+    width: 4vw;
+    margin: 0vw;
+    margin-top: 0vw;
+    margin-top: 1vw;
+
+}
 
 /*********MEDIAQUERY**********/
 
+@media (min-width: 300px) and (max-width: 320px) {
+    #section_1 {
+        background-image: url(img/mobilsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 85vh;
+
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #section_1 {
+        background-image: url(img/mobilsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 120vh;
+
+    }
+
+}
+
+
 @media only screen and (min-width: 800px) {
+
 
     #section_3 .section_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
     }
+
 
     #section_4 .section_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
 
     }
 
     #section_5 .section_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
 
     }
 
     #section_6 .section_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
 
     }
 
@@ -252,6 +495,12 @@ a:hover {
 
 
 @media only screen and (max-width: 800px) {
+
+    #section_2 .section_wrapper2 {
+        height: 50vh;
+        width: 80vw;
+    }
+
     .billed_sprite {
         background-image: url(img/handwriting.png);
         background-size: cover;
