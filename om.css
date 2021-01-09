@@ -1,0 +1,67 @@
+#section_om h2 {
+    margin-bottom: 2vw;
+}
+
+#section_om h3 {
+    padding-top: 1vw;
+}
+
+#section_om p {
+    line-height: 3.2rem;
+}
+
+
+
+body {
+    background-color: #ADADAD;
+}
+
+#section_top {
+    height: 12vh;
+}
+
+/*knap*/
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 3px white solid;
+    text-align: left;
+    outline: none;
+    padding-bottom: 23px;
+
+
+}
+
+.active,
+.collapsible:hover {
+    background-color: #cecece;
+}
+
+h3:hover {
+    color: white;
+
+}
+
+/* fold ud box*/
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+.collapsible:after {
+    content: '\002B';
+    /* Unicode for (+) */
+    color: black;
+    float: right;
+    font-weight: bold;
+}
+
+.active:after {
+    content: "\2212";
+    /* Unicode for (-) */
+}
