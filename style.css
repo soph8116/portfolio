@@ -110,11 +110,11 @@ a.textlink:visited {
 }
 
 
-#billede {
+.billede {
     margin: 0;
 }
 
-#billede:hover {
+.billede:hover {
     cursor: pointer;
     animation: screenshot_scale 0.2s infinite;
     animation-timing-function: linear;
@@ -395,7 +395,6 @@ li.link:hover {
     /* Rounded corners */
     font-size: 18px;
     /* Increase font size */
-    font-family:
 }
 
 /*********FOOTER**********/
@@ -421,10 +420,6 @@ footer p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     position: relative;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 footer a.kontaktlink::before {
