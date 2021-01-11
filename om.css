@@ -13,7 +13,7 @@
 
 
 body {
-    background-color: #ADADAD;
+    background-color: white;
 }
 
 #section_top {
@@ -22,11 +22,11 @@ body {
 
 /*knap*/
 .collapsible {
-    background-color: white;
+    background-color: #ADADAD;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: 3px white solid;
+    border: none;
     text-align: left;
     outline: none;
     padding-bottom: 23px;
@@ -51,6 +51,7 @@ h3:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: white;
+    border: 0.5px #ADADAD solid;
 }
 
 .collapsible:after {
@@ -58,7 +59,6 @@ h3:hover {
     /* Unicode for (+) */
     color: black;
     float: right;
-    font-weight: bold;
 }
 
 .active:after {
