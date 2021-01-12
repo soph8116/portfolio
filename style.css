@@ -290,19 +290,19 @@ li.link:hover {
 /***SECTION 4**************/
 
 #section_4 {
-    margin-bottom: 10vw;
+    margin-bottom: 6vw;
 }
 
 /***SECTION 5**************/
 
 #section_5 {
-    margin-bottom: 5vw;
+    margin-bottom: 6vw;
 }
 
 /***SECTION 6**************/
 
 #section_6 {
-    margin-bottom: 10vw;
+    margin-bottom: 6vw;
 }
 
 /***SECTION OM**************/
@@ -467,7 +467,7 @@ footer img {
 
 /*********MEDIAQUERY**********/
 
-@media (min-width: 300px) and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
     #section_1 {
         background-image: url(img/mobilsplash.jpg);
         background-size: cover;
@@ -478,12 +478,12 @@ footer img {
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
     #section_1 {
-        background-image: url(img/mobilsplash.jpg);
+        background-image: url(img/udenbox.jpg);
         background-size: cover;
         width: 100%;
-        height: 120vh;
+        height: 100vh;
 
     }
 
@@ -494,7 +494,7 @@ footer img {
 
 @media only screen and (max-width: 720px) {
     #section_om .plakatsknap {
-        width: 35vw;
+        width: 40vw;
         height: 15vw;
         margin-top: 2vw;
         margin-right: 0.5vw;
@@ -502,7 +502,7 @@ footer img {
     }
 
     .dokumentationsknap {
-        width: 35vw;
+        width: 40vw;
         height: 15vw;
         margin-top: 2vw;
         margin-right: 0.5vw;
@@ -519,7 +519,7 @@ footer img {
 
 @media (min-width: 720px) and (max-width: 900px) {
     #section_om .plakatsknap {
-        width: 20vw;
+        width: 30vw;
         height: 15vw;
         margin-top: 2vw;
         margin-right: 0.5vw;
@@ -527,7 +527,7 @@ footer img {
     }
 
     .dokumentationsknap {
-        width: 20vw;
+        width: 30vw;
         height: 15vw;
         margin-top: 2vw;
         margin-right: 0.5vw;
